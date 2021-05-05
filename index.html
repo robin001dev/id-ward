@@ -1,0 +1,1003 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <!--====== Required meta tags ======-->
+      <meta charset="utf-8">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link rel="icon" href="assets/images/fav-icon.png" type="image/png">
+      <!--====== Title ======-->
+      <title>ID-ward</title>
+      <!--====== Bootstrap css ======-->
+      <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <!--====== Style css ======-->
+      <link rel="stylesheet" href="assets/css/font.css">
+      <link rel="stylesheet" href="assets/css/map.css">
+      <link rel="stylesheet" href="assets/css/style.css">
+   </head>
+   <head>
+   <body>
+      <!--====== Top-navigation ======-->
+      <nav class="navbar navbar-expand-lg navbar-light">
+         <div class="container-fluid">
+            <div class="row w-100">
+               <div class ="col-4 px-0">
+                  <a class="navbar-brand py-0" href="#"><img src="assets/images/logo.png" class="img-fluid" alt="logo"></a>
+               </div>
+               <div class="col-8 pe-0">
+                  <div class="collapse navbar-collapse" id="navbar">
+                     <ul class="navbar-nav ms-auto">
+                        <!-------- search-box ------->
+                        <li class="search_box ms-auto rounded-pill">
+                           <div class="input-group">
+                              <div class="input-group-prepend">
+                                 <button id="button-addon" type="submit" class="btn btn-link">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                       <circle cx="11.7666" cy="11.7664" r="8.98856" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                       <path d="M18.0183 18.4849L21.5423 21.9997" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                 </button>
+                              </div>
+                              <input type="search" placeholder="search......" aria-describedby="button-addon" class="form-control border-0">
+                           </div>
+                        </li>
+                        <!-------- notification ------>
+                        <li class="nft_b nav-item">
+                           <a class="nft-link dropdown" href="#" role="button" data-toggle="dropdown">
+                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M12 17.8476C17.6392 17.8476 20.2481 17.1242 20.5 14.2205C20.5 11.3188 18.6812 11.5054 18.6812 7.94511C18.6812 5.16414 16.0452 2 12 2C7.95477 2 5.31885 5.16414 5.31885 7.94511C5.31885 11.5054 3.5 11.3188 3.5 14.2205C3.75295 17.1352 6.36177 17.8476 12 17.8476Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                 <path d="M14.3889 20.8574C13.0247 22.3721 10.8967 22.3901 9.51953 20.8574" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>
+                              <span class="rd_circle"></span>
+                           </a>
+                           <!---dropdown--->
+                           <div class="dropdown-menu notifications">
+                              <div class="topnav-dropdown-header">
+                                 <span class="notification-title">Notifications</span>
+                                 <a href="javascript:void(0)" class="clear-noti"> Clear All </a>
+                              </div>
+                              <div class="noti-content">
+                                 <ul class="notification-list">
+                                    <li class="notification-message">
+                                       <a href="#">
+                                          <div class="media">
+                                             <span class="avatar">
+                                             <img alt="" src="assets/images/dummy.png">
+                                             </span>
+                                             <div class="media-body">
+                                                <p class="noti-details"><span class="noti-title">John Doe</span> <span class="noti-info">flight booking</span></p>
+                                                <p class="noti-time"><span class="notification-time">4 mins ago</span></p>
+                                             </div>
+                                          </div>
+                                       </a>
+                                    </li>
+                                    <li class="notification-message">
+                                       <a href="#">
+                                          <div class="media">
+                                             <span class="avatar">
+                                             <img alt="" src="assets/images/dummy.png">
+                                             </span>
+                                             <div class="media-body">
+                                                <p class="noti-details"><span class="noti-title">John Doe</span> <span class="noti-info">flight booking</span></p>
+                                                <p class="noti-time"><span class="notification-time">4 mins ago</span></p>
+                                             </div>
+                                          </div>
+                                       </a>
+                                    </li>
+                                    <li class="notification-message">
+                                       <a href="#">
+                                          <div class="media">
+                                             <span class="avatar">
+                                             <img alt="" src="assets/images/dummy.png">
+                                             </span>
+                                             <div class="media-body">
+                                                <p class="noti-details"><span class="noti-title">John Doe</span> <span class="noti-info">flight booking</span></p>
+                                                <p class="noti-time"><span class="notification-time">4 mins ago</span></p>
+                                             </div>
+                                          </div>
+                                       </a>
+                                    </li>
+                                    <li class="notification-message">
+                                       <a href="#">
+                                          <div class="media">
+                                             <span class="avatar">
+                                             <img alt="" src="assets/images/dummy.png">
+                                             </span>
+                                             <div class="media-body">
+                                                <p class="noti-details"><span class="noti-title">John Doe</span> <span class="noti-info">flight booking</span></p>
+                                                <p class="noti-time"><span class="notification-time">4 mins ago</span></p>
+                                             </div>
+                                          </div>
+                                       </a>
+                                    </li>
+                                    <li class="notification-message">
+                                       <a href="#">
+                                          <div class="media">
+                                             <span class="avatar">
+                                             <img alt="" src="assets/images/dummy.png">
+                                             </span>
+                                             <div class="media-body">
+                                                <p class="noti-details"><span class="noti-title">John Doe</span> <span class="noti-info">flight booking</span></p>
+                                                <p class="noti-time"><span class="notification-time">4 mins ago</span></p>
+                                             </div>
+                                          </div>
+                                       </a>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </nav>
+      <!-------- top-banner ------->
+      <section class="pt-0">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-12">
+                  <div class="top_banner">
+                     <div class="ct_box">
+                        <div class="heading_block">
+                           <h2 class="heading">We Protect <span>Your Data</span></h2>
+                           <a class="info_link" href="#" target="_self">
+                              <svg width="22" height="22" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <rect x="3" y="3" width="13" height="13" fill="#1F1F1F"/>
+                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M5.67 -0.000976562H14.34C17.73 -0.000976562 20 2.37902 20 5.91902V14.09C20 17.62 17.73 19.999 14.34 19.999H5.67C2.28 19.999 0 17.62 0 14.09V5.91902C0 2.37902 2.28 -0.000976562 5.67 -0.000976562ZM9.99 7.06002C9.52 7.06002 9.13 6.66902 9.13 6.19002C9.13 5.70002 9.52 5.31002 10.01 5.31002C10.49 5.31002 10.88 5.70002 10.88 6.19002C10.88 6.66902 10.49 7.06002 9.99 7.06002ZM10.87 13.78C10.87 14.26 10.48 14.65 9.99 14.65C9.51 14.65 9.12 14.26 9.12 13.78V9.36002C9.12 8.87902 9.51 8.48002 9.99 8.48002C10.48 8.48002 10.87 8.87902 10.87 9.36002V13.78Z" fill="#D2D9F2"/>
+                              </svg>
+                           </a>
+                           <img src="assets/images/char_img.png" class="img-fluid tp_img_sm" alt="img"/>
+                        </div>
+                        <p class="desc_info">With ID Ward, your personal data stays on your device and only anonymous insights are shared with advertisers. On this page you can see what insights have been gleaned from your data, and where they have been gleaned from. You can also delete insights (individually or all together) and download them.</p>
+                     </div>
+                     <img src="assets/images/char_img.png" class="img-fluid tp_img" alt="img"/>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="flw_sec">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-lg-5 col-12">
+                  <div class="map_block">
+                     <h4 class="map_title">Insights</h4>
+                     <div class="map">
+                        <div class="outer_bt" id="pr_int">
+                           <div class="info_blk" >
+                              <span class="cp_vl">Purchase Intent</span>
+                              <p class="cp_desc">You book a flight ticket</p>
+                           </div>
+                        </div>
+                        <div class="outer_bt" id="demographic">
+                           <div class="info_blk" >
+                              <span class="cp_vl">Demographic</span>
+                              <p class="cp_desc">You book a flight ticket</p>
+                           </div>
+                        </div>
+                        <div class="outer_bt" id="interest">
+                           <div class="info_blk" >
+                              <span class="cp_vl">Interest</span>
+                              <p class="cp_desc">You book a flight ticket</p>
+                           </div>
+                        </div>
+                        <div class="position-relative overflow-hidden">
+                           <img src="assets/images/skeleton.png" alt="image" class="img-fluid"/>
+                           <!--demographic-->
+                           <div class="demographics">
+                              <button class="demo-1 dmt-btn" id="pin">
+                                 <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.79149 4.72338C8.79149 7.05059 6.90629 8.93231 4.5896 8.93231C2.26628 8.93231 0.387695 7.04395 0.387695 4.72338C0.387695 2.40282 2.25963 0.507812 4.58296 0.507812C6.90628 0.507812 8.79149 2.39617 8.79149 4.72338Z" fill="#ED446D"/>
+                                 </svg>
+                              </button>
+                              <button class="demo-2 dmt-btn" id="pin">
+                                 <svg width="10" height="9" viewBox="0 0 10 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.01353 4.56589C9.01353 6.8931 7.12831 8.77483 4.80497 8.77483C2.48163 8.77483 0.603027 6.88646 0.603027 4.56589C0.603027 2.23867 2.48826 0.356951 4.80497 0.356951C7.13495 0.350302 9.01353 2.23867 9.01353 4.56589Z" fill="#ED446D"/>
+                                 </svg>
+                              </button>
+                              <button class="demo-3 dmt-btn" id="pin">
+                                 <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.97064 4.33494C8.97064 6.66217 7.08545 8.5439 4.76878 8.5439C2.44547 8.5439 0.566895 6.65552 0.566895 4.33494C0.566895 2.00771 2.45211 0.125977 4.76878 0.125977C7.09209 0.125977 8.97064 2.00771 8.97064 4.33494Z" fill="#ED446D"/>
+                                 </svg>
+                              </button>
+                              <button class="demo-4 dmt-btn" id="pin">
+                                 <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.9978 9.08684C7.31844 9.08684 9.19968 7.20243 9.19968 4.87789C9.19968 2.55336 7.31844 0.668945 4.9978 0.668945C2.67716 0.668945 0.795898 2.55336 0.795898 4.87789C0.795898 7.20243 2.67716 9.08684 4.9978 9.08684Z" fill="#ED446D"/>
+                                 </svg>
+                              </button>
+                              <button class="demo-5 dmt-btn" id="pin">
+                                 <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.74032 7.22679C5.60271 7.22679 7.11246 5.7145 7.11246 3.84899C7.11246 1.98348 5.60271 0.471191 3.74032 0.471191C1.87794 0.471191 0.368164 1.98348 0.368164 3.84899C0.368164 5.7145 1.87794 7.22679 3.74032 7.22679Z" fill="#ED446D"/>
+                                 </svg>
+                              </button>
+                              <button class="demo-6 dmt-btn" id="pin">
+                                 <svg width="10" height="9" viewBox="0 0 10 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.83376 8.91109C7.15442 8.91109 9.03568 7.02667 9.03568 4.70213C9.03568 2.37758 7.15442 0.493164 4.83376 0.493164C2.51309 0.493164 0.631836 2.37758 0.631836 4.70213C0.631836 7.02667 2.51309 8.91109 4.83376 8.91109Z" fill="#ED446D"/>
+                                 </svg>
+                              </button>
+                              <button class="demo-7 dmt-btn" id="pin">
+                                 <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.628 4.22379C7.61472 6.0922 6.09459 7.59491 4.22928 7.58161C2.36397 7.56831 0.863764 6.04566 0.877041 4.17724C0.890317 2.30883 2.41044 0.806125 4.27575 0.819424C6.14106 0.832722 7.64127 2.35538 7.628 4.22379Z" fill="#ED446D"/>
+                                 </svg>
+                              </button>
+                              <button class="demo-8 dmt-btn" id="pin">
+                                 <svg width="10" height="9" viewBox="0 0 10 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.15982 8.96869C7.48043 8.96869 9.36166 7.08427 9.36166 4.75972C9.36166 2.43518 7.48043 0.550781 5.15982 0.550781C2.83921 0.550781 0.958008 2.43518 0.958008 4.75972C0.958008 7.08427 2.83921 8.96869 5.15982 8.96869Z" fill="#ED446D"/>
+                                 </svg>
+                              </button>
+                              <button class="demo-9 dmt-btn" id="pin">
+                                 <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.10261 4.18182C7.08933 6.05025 5.56917 7.55296 3.70387 7.53966C1.83857 7.52636 0.338374 6.0037 0.35165 4.13527C0.364926 2.26685 1.88504 0.764133 3.75034 0.777431C5.60901 0.79073 7.10925 2.31339 7.10261 4.18182Z" fill="#ED446D"/>
+                                 </svg>
+                              </button>
+                              <button class="demo-10 dmt-btn" id="pin">
+                                 <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.35818 8.80029C6.67884 8.80029 8.56009 6.91586 8.56009 4.5913C8.56009 2.26674 6.67884 0.382324 4.35818 0.382324C2.03752 0.382324 0.15625 2.26674 0.15625 4.5913C0.15625 6.91586 2.03752 8.80029 4.35818 8.80029Z" fill="#ED446D"/>
+                                 </svg>
+                              </button>
+                              <button class="demo-11 dmt-btn" id="pin">
+                                 <svg width="8" height="7" viewBox="0 0 8 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.64557 6.97923C5.50795 6.97923 7.01771 5.46693 7.01771 3.60142C7.01771 1.73592 5.50795 0.223633 3.64557 0.223633C1.78319 0.223633 0.273438 1.73592 0.273438 3.60142C0.273438 5.46693 1.78319 6.97923 3.64557 6.97923Z" fill="#ED446D"/>
+                                 </svg>
+                              </button>
+                              <button class="demo-12 dmt-btn" id="pin">
+                                 <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.38209 8.85832C6.70274 8.85832 8.584 6.97392 8.584 4.64939C8.584 2.32485 6.70274 0.44043 4.38209 0.44043C2.06144 0.44043 0.180176 2.32485 0.180176 4.64939C0.180176 6.97392 2.06144 8.85832 4.38209 8.85832Z" fill="#ED446D"/>
+                                 </svg>
+                              </button>
+                              <button class="demo-13 dmt-btn" id="pin">
+                                 <svg width="8" height="7" viewBox="0 0 8 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.73397 6.91866C5.59635 6.91866 7.10612 5.40636 7.10612 3.54086C7.10612 1.67536 5.59635 0.163086 3.73397 0.163086C1.87158 0.163086 0.361816 1.67536 0.361816 3.54086C0.361816 5.40636 1.87158 6.91866 3.73397 6.91866Z" fill="#ED446D"/>
+                                 </svg>
+                              </button>
+                              <button class="demo-14 dmt-btn" id="pin">
+                                 <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.72423 7.49632C5.58663 7.49632 7.0964 5.98402 7.0964 4.11852C7.0964 2.25301 5.58663 0.740723 3.72423 0.740723C1.86183 0.740723 0.352051 2.25301 0.352051 4.11852C0.352051 5.98402 1.86183 7.49632 3.72423 7.49632Z" fill="#ED446D"/>
+                                 </svg>
+                              </button>
+                              <button class="demo-15 dmt-btn" id="pin">
+                                 <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.68138 8.457C7.00201 8.457 8.88324 6.57257 8.88324 4.24802C8.88324 1.92347 7.00201 0.0390625 4.68138 0.0390625C2.36075 0.0390625 0.479492 1.92347 0.479492 4.24802C0.479492 6.57257 2.36075 8.457 4.68138 8.457Z" fill="#ED446D"/>
+                                 </svg>
+                              </button>
+                              <button class="demo-16 dmt-btn" id="pin">
+                                 <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.56568 8.94235C6.88633 8.94235 8.76758 7.05792 8.76758 4.73337C8.76758 2.40882 6.88633 0.524414 4.56568 0.524414C2.24504 0.524414 0.36377 2.40882 0.36377 4.73337C0.36377 7.05792 2.24504 8.94235 4.56568 8.94235Z" fill="#ED446D"/>
+                                 </svg>
+                              </button>
+                              <button class="demo-17 dmt-btn" id="pin">
+                                 <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.22661 3.7689C7.22661 5.63731 5.71311 7.14668 3.84778 7.14668C1.98246 7.14668 0.475586 5.63066 0.475586 3.7689C0.475586 1.90049 1.9891 0.391135 3.84778 0.391135C5.71975 0.384486 7.22661 1.90049 7.22661 3.7689Z" fill="#ED446D"/>
+                                 </svg>
+                              </button>
+                              <button class="demo-18 dmt-btn" id="pin">
+                                 <svg width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.54858 9.38417C6.86922 9.38417 8.75046 7.49976 8.75046 5.17523C8.75046 2.8507 6.86922 0.966309 4.54858 0.966309C2.22794 0.966309 0.34668 2.8507 0.34668 5.17523C0.34668 7.49976 2.22794 9.38417 4.54858 9.38417Z" fill="#ED446D"/>
+                                 </svg>
+                              </button>
+                              <button class="demo-19 dmt-btn" id="pin">
+                                 <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.04473 9.28308C7.36541 9.28308 9.24667 7.39867 9.24667 5.07415C9.24667 2.74962 7.36541 0.865234 5.04473 0.865234C2.72406 0.865234 0.842773 2.74962 0.842773 5.07415C0.842773 7.39867 2.72406 9.28308 5.04473 9.28308Z" fill="#ED446D"/>
+                                 </svg>
+                              </button>
+                              <button class="demo-20 dmt-btn" id="pin">
+                                 <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.05233 7.69505C5.91472 7.69505 7.42447 6.18275 7.42447 4.31724C7.42447 2.45174 5.91472 0.939453 4.05233 0.939453C2.18995 0.939453 0.680176 2.45174 0.680176 4.31724C0.680176 6.18275 2.18995 7.69505 4.05233 7.69505Z" fill="#ED446D"/>
+                                 </svg>
+                              </button>
+                              <button class="demo-21 dmt-btn" id="pin">
+                                 <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.05233 7.69505C5.91472 7.69505 7.42447 6.18275 7.42447 4.31724C7.42447 2.45174 5.91472 0.939453 4.05233 0.939453C2.18995 0.939453 0.680176 2.45174 0.680176 4.31724C0.680176 6.18275 2.18995 7.69505 4.05233 7.69505Z" fill="#ED446D"/>
+                                 </svg>
+                              </button>
+                              <button class="demo-22 dmt-btn" id="pin">
+                                 <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.66918 8.453C6.98983 8.453 8.87109 6.56859 8.87109 4.24407C8.87109 1.91955 6.98983 0.0351562 4.66918 0.0351562C2.34853 0.0351562 0.467285 1.91955 0.467285 4.24407C0.467285 6.56859 2.34853 8.453 4.66918 8.453Z" fill="#ED446D"/>
+                                 </svg>
+                              </button>
+                              <button class="demo-23 dmt-btn" id="pin">
+                                 <svg width="8" height="7" viewBox="0 0 8 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.1608 3.39977C7.1608 5.26818 5.64732 6.77756 3.78866 6.77756C1.92336 6.77756 0.416504 5.26153 0.416504 3.39977C0.416504 1.53135 1.93 0.0219944 3.78866 0.0219944C5.65396 0.0153453 7.1608 1.53135 7.1608 3.39977Z" fill="#ED446D"/>
+                                 </svg>
+                              </button>
+                              <button class="demo-24 dmt-btn" id="pin">
+                                 <svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.53531 6.63792C5.271 6.63792 6.67804 5.23089 6.67804 3.49523C6.67804 1.75957 5.271 0.352539 3.53531 0.352539C1.79962 0.352539 0.392578 1.75957 0.392578 3.49523C0.392578 5.23089 1.79962 6.63792 3.53531 6.63792Z" fill="#ED446D"/>
+                                 </svg>
+                              </button>
+                              <button class="demo-25 dmt-btn" id="pin">
+                                 <svg width="9" height="8" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.13141 4.37252C8.13141 6.35254 6.52481 7.95207 4.5518 7.95207C2.57173 7.95207 0.972168 6.34549 0.972168 4.37252C0.972168 2.3925 2.57878 0.792992 4.5518 0.792992C6.53186 0.785946 8.13141 2.3925 8.13141 4.37252Z" fill="#ED446D"/>
+                                 </svg>
+                              </button>
+                              <button class="demo-26 dmt-btn" id="pin">
+                                 <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.14987 4.65763C9.14987 7.12386 7.14868 9.11799 4.68945 9.11799C2.22317 9.11799 0.229004 7.11681 0.229004 4.65763C0.229004 2.1914 2.23022 0.197284 4.68945 0.197284C7.15572 0.190238 9.14987 2.1914 9.14987 4.65763Z" fill="#ED446D"/>
+                                 </svg>
+                              </button>
+                              <button class="demo-27 dmt-btn" id="pin">
+                                 <svg width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.936 4.65763C8.936 7.12386 6.93481 9.11799 4.47558 9.11799C2.00931 9.11799 0.0151367 7.11681 0.0151367 4.65763C0.0151367 2.1914 2.01635 0.197284 4.47558 0.197284C6.94185 0.190238 8.936 2.1914 8.936 4.65763Z" fill="#ED446D"/>
+                                 </svg>
+                              </button>
+                              <button class="demo-28 dmt-btn" id="pin">
+                                 <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.61627 4.28023C7.61627 6.26025 6.00968 7.85978 4.03666 7.85978C2.0566 7.85978 0.457031 6.25321 0.457031 4.28023C0.457031 2.30021 2.06364 0.700707 4.03666 0.700707C6.01672 0.69366 7.61627 2.30021 7.61627 4.28023Z" fill="#ED446D"/>
+                                 </svg>
+                              </button>
+                              <button class="demo-29 dmt-btn" id="pin">
+                                 <svg width="9" height="8" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.13141 3.71236C8.13141 5.69238 6.52481 7.29191 4.5518 7.29191C2.57173 7.29191 0.972168 5.68534 0.972168 3.71236C0.972168 1.73234 2.57878 0.132836 4.5518 0.132836C6.53186 0.125789 8.13141 1.73234 8.13141 3.71236Z" fill="#ED446D"/>
+                                 </svg>
+                              </button>
+                              <button class="demo-30 dmt-btn" id="pin">
+                                 <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.14987 4.9965C9.14987 7.46273 7.14868 9.45686 4.68945 9.45686C2.22317 9.45686 0.229004 7.45568 0.229004 4.9965C0.229004 2.53027 2.23022 0.536151 4.68945 0.536151C7.15572 0.529105 9.14987 2.53027 9.14987 4.9965Z" fill="#ED446D"/>
+                                 </svg>
+                              </button>
+                              <button class="demo-31 dmt-btn" id="pin">
+                                 <svg width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.936 4.9965C8.936 7.46273 6.93481 9.45686 4.47558 9.45686C2.00931 9.45686 0.0151367 7.45568 0.0151367 4.9965C0.0151367 2.53027 2.01635 0.536151 4.47558 0.536151C6.94185 0.529105 8.936 2.53027 8.936 4.9965Z" fill="#ED446D"/>
+                                 </svg>
+                              </button>
+                              <button class="demo-32 dmt-btn" id="pin">
+                                 <svg width="9" height="8" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.00885 3.63131C8.00885 5.61134 6.40226 7.21086 4.42924 7.21086C2.44917 7.21086 0.849609 5.60429 0.849609 3.63131C0.849609 1.65128 2.45622 0.0517578 4.42924 0.0517578C6.40226 0.0517578 8.00885 1.65128 8.00885 3.63131Z" fill="#ED446D"/>
+                                 </svg>
+                              </button>
+                              <button class="demo-33 dmt-btn" id="pin">
+                                 <svg width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.936 4.67618C8.936 7.14241 6.93481 9.13655 4.47558 9.13655C2.00931 9.13655 0.0151367 7.13537 0.0151367 4.67618C0.0151367 2.20995 2.01635 0.215839 4.47558 0.215839C6.94185 0.208792 8.936 2.20995 8.936 4.67618Z" fill="#ED446D"/>
+                                 </svg>
+                              </button>
+                              <button class="demo-34 dmt-btn" id="pin">
+                                 <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.70241 4.04197C7.70241 6.02199 6.09582 7.62153 4.11576 7.62153C2.1357 7.62153 0.536133 6.01495 0.536133 4.04197C0.536133 2.06194 2.14274 0.462425 4.11576 0.462425C6.10286 0.455379 7.70241 2.06194 7.70241 4.04197Z" fill="#ED446D"/>
+                                 </svg>
+                              </button>
+                              <button class="demo-35 dmt-btn" id="pin">
+                                 <svg width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.936 5.35587C8.936 7.8221 6.93481 9.81624 4.47558 9.81624C2.00931 9.81624 0.0151367 7.81505 0.0151367 5.35587C0.0151367 2.88964 2.01635 0.895526 4.47558 0.895526C6.94185 0.88848 8.936 2.88964 8.936 5.35587Z" fill="#ED446D"/>
+                                 </svg>
+                              </button>
+                              <button class="demo-36 dmt-btn" id="pin">
+                                 <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.70241 3.72214C7.70241 5.70217 6.09582 7.3017 4.11576 7.3017C2.1357 7.3017 0.536133 5.69512 0.536133 3.72214C0.536133 1.74212 2.14274 0.142601 4.11576 0.142601C6.10286 0.135555 7.70241 1.74212 7.70241 3.72214Z" fill="#ED446D"/>
+                                 </svg>
+                              </button>
+                              <button class="demo-37 dmt-btn" id="pin">
+                                 <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2.34762 2.98813C1.23224 4.62412 1.65863 6.85072 3.28882 7.96216C4.92483 9.07756 7.15146 8.65121 8.26288 7.02105C9.37826 5.38506 8.95185 3.15845 7.32166 2.04701C5.69147 0.93558 3.463 1.35215 2.34762 2.98813Z" fill="#ED446D"/>
+                                 </svg>
+                              </button>
+                              <button class="demo-38 dmt-btn" id="pin">
+                                 <svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.53531 6.65745C5.271 6.65745 6.67804 5.25042 6.67804 3.51476C6.67804 1.7791 5.271 0.37207 3.53531 0.37207C1.79962 0.37207 0.392578 1.7791 0.392578 3.51476C0.392578 5.25042 1.79962 6.65745 3.53531 6.65745Z" fill="#ED446D"/>
+                                 </svg>
+                              </button>
+                              <button class="demo-39 dmt-btn" id="pin">
+                                 <svg width="9" height="8" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.13141 4.39205C8.13141 6.37207 6.52481 7.9716 4.5518 7.9716C2.57173 7.9716 0.972168 6.36502 0.972168 4.39205C0.972168 2.41203 2.57878 0.812523 4.5518 0.812523C6.53186 0.805477 8.13141 2.41203 8.13141 4.39205Z" fill="#ED446D"/>
+                                 </svg>
+                              </button>
+                              <button class="demo-40 dmt-btn" id="pin">
+                                 <svg width="9" height="8" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.13141 3.73092C8.13141 5.71094 6.52481 7.31047 4.5518 7.31047C2.57173 7.31047 0.972168 5.70389 0.972168 3.73092C0.972168 1.7509 2.57878 0.15139 4.5518 0.15139C6.53186 0.144344 8.13141 1.7509 8.13141 3.73092Z" fill="#ED446D"/>
+                                 </svg>
+                              </button>
+                              <button class="demo-41 dmt-btn" id="pin">
+                                 <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.26666 3.62252C7.26666 5.60255 5.66007 7.20207 3.68705 7.20207C1.70699 7.20207 0.107422 5.5955 0.107422 3.62252C0.107422 1.64249 1.71403 0.0429688 3.68705 0.0429688C5.66007 0.0429688 7.26666 1.64249 7.26666 3.62252Z" fill="#ED446D"/>
+                                 </svg>
+                              </button>
+                              <button class="demo-42 dmt-btn" id="pin">
+                                 <svg width="9" height="8" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.13141 4.41109C8.13141 6.39111 6.52481 7.99064 4.5518 7.99064C2.57173 7.99064 0.972168 6.38407 0.972168 4.41109C0.972168 2.43107 2.57878 0.831566 4.5518 0.831566C6.53186 0.82452 8.13141 2.43107 8.13141 4.41109Z" fill="#ED446D"/>
+                                 </svg>
+                              </button>
+                              <button class="demo-43 dmt-btn" id="pin">
+                                 <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.76861 4.08199C7.76861 6.06202 6.16202 7.66154 4.189 7.66154C2.20894 7.66154 0.609375 6.05498 0.609375 4.08199C0.609375 2.10196 2.21599 0.502441 4.189 0.502441C6.16202 0.502441 7.76861 2.10196 7.76861 4.08199Z" fill="#ED446D"/>
+                                 </svg>
+                              </button>
+                              <button class="demo-44 dmt-btn" id="pin">
+                                 <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.72467 4.01998C7.72467 6 6.11808 7.59953 4.14506 7.59953C2.165 7.59953 0.56543 5.99295 0.56543 4.01998C0.56543 2.03996 2.17204 0.440453 4.14506 0.440453C6.12512 0.433406 7.72467 2.03996 7.72467 4.01998Z" fill="#ED446D"/>
+                                 </svg>
+                              </button>
+                              <button class="demo-45 dmt-btn" id="pin">
+                                 <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.72467 4.01998C7.72467 6 6.11808 7.59953 4.14506 7.59953C2.165 7.59953 0.56543 5.99295 0.56543 4.01998C0.56543 2.03996 2.17204 0.440453 4.14506 0.440453C6.12512 0.433406 7.72467 2.03996 7.72467 4.01998Z" fill="#ED446D"/>
+                                 </svg>
+                              </button>
+                           </div>
+                           <!---------------------------purchase_intent------------------------->
+                           <div class="purchase_intent">
+                              <button class="int-1 int-btn" id="pin">
+                                 <svg width="10" height="9" viewBox="0 0 10 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.18683 4.41354C9.18683 6.74076 7.30162 8.62249 4.97829 8.62249C2.65496 8.62249 0.776367 6.73411 0.776367 4.41354C0.776367 2.08632 2.66159 0.20459 4.97829 0.20459C7.30825 0.20459 9.18683 2.08632 9.18683 4.41354Z" fill="#CD9757"/>
+                                 </svg>
+                              </button>
+                              <button class="int-2 int-btn" id="pin">
+                                 <svg width="10" height="9" viewBox="0 0 10 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.18683 4.41354C9.18683 6.74076 7.30162 8.62249 4.97829 8.62249C2.65496 8.62249 0.776367 6.73411 0.776367 4.41354C0.776367 2.08632 2.66159 0.20459 4.97829 0.20459C7.30825 0.20459 9.18683 2.08632 9.18683 4.41354Z" fill="#CD9757"/>
+                                 </svg>
+                              </button>
+                              <button class="int-3 int-btn" id="pin">
+                                 <svg width="8" height="7" viewBox="0 0 8 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.52939 3.56413C7.51612 5.43255 5.99598 6.93525 4.13066 6.92196C2.26534 6.90866 0.765131 5.386 0.778408 3.51758C0.791684 1.64916 2.31182 0.146457 4.17714 0.159756C6.03582 0.173054 7.54267 1.69571 7.52939 3.56413Z" fill="#CD9757"/>
+                                 </svg>
+                              </button>
+                              <button class="int-4 int-btn" id="pin">
+                                 <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.50167 8.78456C6.8223 8.78456 8.70355 6.90016 8.70355 4.57563C8.70355 2.2511 6.8223 0.366699 4.50167 0.366699C2.18104 0.366699 0.299805 2.2511 0.299805 4.57563C0.299805 6.90016 2.18104 8.78456 4.50167 8.78456Z" fill="#CD9757"/>
+                                 </svg>
+                              </button>
+                              <button class="int-5 int-btn" id="pin">
+                                 <svg width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.52856 9.33531C6.8492 9.33531 8.73044 7.45092 8.73044 5.1264C8.73044 2.80188 6.8492 0.91748 4.52856 0.91748C2.20792 0.91748 0.32666 2.80188 0.32666 5.1264C0.32666 7.45092 2.20792 9.33531 4.52856 9.33531Z" fill="#CD9757"/>
+                                 </svg>
+                              </button>
+                              <button class="int-6 int-btn" id="pin">
+                                 <svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.37214 6.75557C5.23452 6.75557 6.74428 5.24329 6.74428 3.37779C6.74428 1.5123 5.23452 0 3.37214 0C1.50976 0 0 1.5123 0 3.37779C0 5.24329 1.50976 6.75557 3.37214 6.75557Z" fill="#CD9757"/>
+                                 </svg>
+                              </button>
+                              <button class="int-7 int-btn" id="pin">
+                                 <svg width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.79713 9.06728C7.11778 9.06728 8.99904 7.18288 8.99904 4.85835C8.99904 2.53381 7.11778 0.649414 4.79713 0.649414C2.47648 0.649414 0.595215 2.53381 0.595215 4.85835C0.595215 7.18288 2.47648 9.06728 4.79713 9.06728Z" fill="#CD9757"/>
+                                 </svg>
+                              </button>
+                              <button class="int-8 int-btn" id="pin">
+                                 <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.97875 9.37636C7.2994 9.37636 9.18065 7.49196 9.18065 5.16743C9.18065 2.84289 7.2994 0.958496 4.97875 0.958496C2.65811 0.958496 0.776855 2.84289 0.776855 5.16743C0.776855 7.49196 2.65811 9.37636 4.97875 9.37636Z" fill="#CD9757"/>
+                                 </svg>
+                              </button>
+                              <button class="int-9 int-btn" id="pin">
+                                 <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.73297 7.67154C5.59535 7.67154 7.1051 6.15927 7.1051 4.29379C7.1051 2.4283 5.59535 0.916016 3.73297 0.916016C1.8706 0.916016 0.36084 2.4283 0.36084 4.29379C0.36084 6.15927 1.8706 7.67154 3.73297 7.67154Z" fill="#CD9757"/>
+                                 </svg>
+                              </button>
+                              <button class="int-10 int-btn" id="pin">
+                                 <svg width="8" height="7" viewBox="0 0 8 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.35799 6.87666C6.22037 6.87666 7.73012 5.36439 7.73012 3.49889C7.73012 1.63339 6.22037 0.121094 4.35799 0.121094C2.49561 0.121094 0.98584 1.63339 0.98584 3.49889C0.98584 5.36439 2.49561 6.87666 4.35799 6.87666Z" fill="#CD9757"/>
+                                 </svg>
+                              </button>
+                              <button class="int-11 int-btn" id="pin">
+                                 <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.31941 7.06949C6.18178 7.06949 7.69153 5.55721 7.69153 3.69173C7.69153 1.82624 6.18178 0.313965 4.31941 0.313965C2.45703 0.313965 0.947266 1.82624 0.947266 3.69173C0.947266 5.55721 2.45703 7.06949 4.31941 7.06949Z" fill="#CD9757"/>
+                                 </svg>
+                              </button>
+                              <button class="int-12 int-btn" id="pin">
+                                 <svg width="10" height="9" viewBox="0 0 10 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.8464 8.66003C7.16702 8.66003 9.04825 6.77563 9.04825 4.45111C9.04825 2.12659 7.16702 0.242188 4.8464 0.242188C2.52578 0.242188 0.644531 2.12659 0.644531 4.45111C0.644531 6.77563 2.52578 8.66003 4.8464 8.66003Z" fill="#CD9757"/>
+                                 </svg>
+                              </button>
+                              <button class="int-13 int-btn" id="pin">
+                                 <svg width="10" height="9" viewBox="0 0 10 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.8464 8.66003C7.16702 8.66003 9.04825 6.77563 9.04825 4.45111C9.04825 2.12659 7.16702 0.242188 4.8464 0.242188C2.52578 0.242188 0.644531 2.12659 0.644531 4.45111C0.644531 6.77563 2.52578 8.66003 4.8464 8.66003Z" fill="#CD9757"/>
+                                 </svg>
+                              </button>
+                              <button class="int-14 int-btn" id="pin">
+                                 <svg width="8" height="7" viewBox="0 0 8 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.86241 6.8806C5.72481 6.8806 7.2346 5.36831 7.2346 3.5028C7.2346 1.63729 5.72481 0.125 3.86241 0.125C2 0.125 0.490234 1.63729 0.490234 3.5028C0.490234 5.36831 2 6.8806 3.86241 6.8806Z" fill="#CD9757"/>
+                                 </svg>
+                              </button>
+                              <button class="int-15 int-btn" id="pin">
+                                 <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.34691 8.9218C6.66755 8.9218 8.54878 7.03738 8.54878 4.71284C8.54878 2.38831 6.66755 0.503906 4.34691 0.503906C2.02628 0.503906 0.14502 2.38831 0.14502 4.71284C0.14502 7.03738 2.02628 8.9218 4.34691 8.9218Z" fill="#CD9757"/>
+                                 </svg>
+                              </button>
+                              <button class="int-16 int-btn" id="pin">
+                                 <svg width="8" height="7" viewBox="0 0 8 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.67345 6.77649C5.53586 6.77649 7.04565 5.26421 7.04565 3.39873C7.04565 1.53326 5.53586 0.0209961 3.67345 0.0209961C1.81104 0.0209961 0.30127 1.53326 0.30127 3.39873C0.30127 5.26421 1.81104 6.77649 3.67345 6.77649Z" fill="#CD9757"/>
+                                 </svg>
+                              </button>
+                              <button class="int-17 int-btn" id="pin">
+                                 <svg width="10" height="9" viewBox="0 0 10 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.90503 8.5239C7.22568 8.5239 9.10695 6.63946 9.10695 4.31492C9.10695 1.99037 7.22568 0.105957 4.90503 0.105957C2.58438 0.105957 0.703125 1.99037 0.703125 4.31492C0.703125 6.63946 2.58438 8.5239 4.90503 8.5239Z" fill="#CD9757"/>
+                                 </svg>
+                              </button>
+                              <button class="int-18 int-btn" id="pin">
+                                 <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.6661 7.24683C5.52849 7.24683 7.03824 5.73454 7.03824 3.86903C7.03824 2.00352 5.52849 0.491211 3.6661 0.491211C1.80372 0.491211 0.293945 2.00352 0.293945 3.86903C0.293945 5.73454 1.80372 7.24683 3.6661 7.24683Z" fill="#CD9757"/>
+                                 </svg>
+                              </button>
+                              <button class="int-19 int-btn" id="pin">
+                                 <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.71741 7.65059C5.57982 7.65059 7.08958 6.13829 7.08958 4.27279C7.08958 2.4073 5.57982 0.89502 3.71741 0.89502C1.855 0.89502 0.345215 2.4073 0.345215 4.27279C0.345215 6.13829 1.855 7.65059 3.71741 7.65059Z" fill="#CD9757"/>
+                                 </svg>
+                              </button>
+                              <button class="int-20 int-btn" id="pin">
+                                 <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.71741 7.65059C5.57982 7.65059 7.08958 6.13829 7.08958 4.27279C7.08958 2.4073 5.57982 0.89502 3.71741 0.89502C1.855 0.89502 0.345215 2.4073 0.345215 4.27279C0.345215 6.13829 1.855 7.65059 3.71741 7.65059Z" fill="#CD9757"/>
+                                 </svg>
+                              </button>
+                              <button class="int-21 int-btn" id="pin">
+                                 <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.71741 7.65059C5.57982 7.65059 7.08958 6.13829 7.08958 4.27279C7.08958 2.4073 5.57982 0.89502 3.71741 0.89502C1.855 0.89502 0.345215 2.4073 0.345215 4.27279C0.345215 6.13829 1.855 7.65059 3.71741 7.65059Z" fill="#CD9757"/>
+                                 </svg>
+                              </button>
+                              <button class="int-22 int-btn" id="pin">
+                                 <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.71741 7.65059C5.57982 7.65059 7.08958 6.13829 7.08958 4.27279C7.08958 2.4073 5.57982 0.89502 3.71741 0.89502C1.855 0.89502 0.345215 2.4073 0.345215 4.27279C0.345215 6.13829 1.855 7.65059 3.71741 7.65059Z" fill="#CD9757"/>
+                                 </svg>
+                              </button>
+                              <button class="int-23 int-btn" id="pin">
+                                 <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.71741 7.65059C5.57982 7.65059 7.08958 6.13829 7.08958 4.27279C7.08958 2.4073 5.57982 0.89502 3.71741 0.89502C1.855 0.89502 0.345215 2.4073 0.345215 4.27279C0.345215 6.13829 1.855 7.65059 3.71741 7.65059Z" fill="#CD9757"/>
+                                 </svg>
+                              </button>
+                              <button class="int-24 int-btn" id="pin">
+                                 <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.71741 7.65059C5.57982 7.65059 7.08958 6.13829 7.08958 4.27279C7.08958 2.4073 5.57982 0.89502 3.71741 0.89502C1.855 0.89502 0.345215 2.4073 0.345215 4.27279C0.345215 6.13829 1.855 7.65059 3.71741 7.65059Z" fill="#CD9757"/>
+                                 </svg>
+                              </button>
+                              <button class="int-25 int-btn" id="pin">
+                                 <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.71741 7.65059C5.57982 7.65059 7.08958 6.13829 7.08958 4.27279C7.08958 2.4073 5.57982 0.89502 3.71741 0.89502C1.855 0.89502 0.345215 2.4073 0.345215 4.27279C0.345215 6.13829 1.855 7.65059 3.71741 7.65059Z" fill="#CD9757"/>
+                                 </svg>
+                              </button>
+                              <button class="int-26 int-btn" id="pin">
+                                 <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.38823 4.89845C9.38823 7.2257 7.50301 9.10745 5.18631 9.10745C2.86297 9.10745 0.984375 7.21905 0.984375 4.89845C0.984375 2.57121 2.86961 0.689471 5.18631 0.689471C7.50965 0.682821 9.38823 2.57121 9.38823 4.89845Z" fill="#CD9757"/>
+                                 </svg>
+                              </button>
+                              <button class="int-27 int-btn" id="pin">
+                                 <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.76861 4.04391C7.76861 6.02394 6.16202 7.62345 4.189 7.62345C2.20894 7.62345 0.609375 6.01689 0.609375 4.04391C0.609375 2.06387 2.21599 0.464355 4.189 0.464355C6.16202 0.464355 7.76861 2.06387 7.76861 4.04391Z" fill="#CD9757"/>
+                                 </svg>
+                              </button>
+                              <button class="int-28 int-btn" id="pin">
+                                 <svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.53531 6.97776C5.271 6.97776 6.67804 5.57074 6.67804 3.83507C6.67804 2.09941 5.271 0.692383 3.53531 0.692383C1.79962 0.692383 0.392578 2.09941 0.392578 3.83507C0.392578 5.57074 1.79962 6.97776 3.53531 6.97776Z" fill="#CD9757"/>
+                                 </svg>
+                              </button>
+                              <button class="int-29 int-btn" id="pin">
+                                 <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.76861 4.04391C7.76861 6.02394 6.16202 7.62345 4.189 7.62345C2.20894 7.62345 0.609375 6.01689 0.609375 4.04391C0.609375 2.06387 2.21599 0.464355 4.189 0.464355C6.16202 0.464355 7.76861 2.06387 7.76861 4.04391Z" fill="#CD9757"/>
+                                 </svg>
+                              </button>
+                              <button class="int-30 int-btn" id="pin">
+                                 <svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.53531 6.97776C5.271 6.97776 6.67804 5.57074 6.67804 3.83507C6.67804 2.09941 5.271 0.692383 3.53531 0.692383C1.79962 0.692383 0.392578 2.09941 0.392578 3.83507C0.392578 5.57074 1.79962 6.97776 3.53531 6.97776Z" fill="#CD9757"/>
+                                 </svg>
+                              </button>
+                              <button class="int-31 int-btn" id="pin">
+                                 <svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.53531 6.31761C5.271 6.31761 6.67804 4.91058 6.67804 3.17492C6.67804 1.43925 5.271 0.0322266 3.53531 0.0322266C1.79962 0.0322266 0.392578 1.43925 0.392578 3.17492C0.392578 4.91058 1.79962 6.31761 3.53531 6.31761Z" fill="#CD9757"/>
+                                 </svg>
+                              </button>
+                              <button class="int-32 int-btn" id="pin">
+                                 <svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.53531 6.31761C5.271 6.31761 6.67804 4.91058 6.67804 3.17492C6.67804 1.43925 5.271 0.0322266 3.53531 0.0322266C1.79962 0.0322266 0.392578 1.43925 0.392578 3.17492C0.392578 4.91058 1.79962 6.31761 3.53531 6.31761Z" fill="#CD9757"/>
+                                 </svg>
+                              </button>
+                              <button class="int-33 int-btn" id="pin">
+                                 <svg width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.936 5.33634C8.936 7.80257 6.93481 9.79671 4.47558 9.79671C2.00931 9.79671 0.0151367 7.79552 0.0151367 5.33634C0.0151367 2.87011 2.01635 0.875995 4.47558 0.875995C6.94185 0.868949 8.936 2.87011 8.936 5.33634Z" fill="#CD9757"/>
+                                 </svg>
+                              </button>
+                              <button class="int-34 int-btn" id="pin">
+                                 <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.76861 3.72408C7.76861 5.70411 6.16202 7.30363 4.189 7.30363C2.20894 7.30363 0.609375 5.69707 0.609375 3.72408C0.609375 1.74405 2.21599 0.144531 4.189 0.144531C6.16202 0.144531 7.76861 1.74405 7.76861 3.72408Z" fill="#CD9757"/>
+                                 </svg>
+                              </button>
+                              <button class="int-35 int-btn" id="pin">
+                                 <svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.41324 6.65745C5.14893 6.65745 6.55597 5.25042 6.55597 3.51476C6.55597 1.7791 5.14893 0.37207 3.41324 0.37207C1.67755 0.37207 0.270508 1.7791 0.270508 3.51476C0.270508 5.25042 1.67755 6.65745 3.41324 6.65745Z" fill="#CD9757"/>
+                                 </svg>
+                              </button>
+                              <button class="int-36 int-btn" id="pin">
+                                 <svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.41324 6.65745C5.14893 6.65745 6.55597 5.25042 6.55597 3.51476C6.55597 1.7791 5.14893 0.37207 3.41324 0.37207C1.67755 0.37207 0.270508 1.7791 0.270508 3.51476C0.270508 5.25042 1.67755 6.65745 3.41324 6.65745Z" fill="#CD9757"/>
+                                 </svg>
+                              </button>
+                              <button class="int-37 int-btn" id="pin">
+                                 <svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.41324 6.65745C5.14893 6.65745 6.55597 5.25042 6.55597 3.51476C6.55597 1.7791 5.14893 0.37207 3.41324 0.37207C1.67755 0.37207 0.270508 1.7791 0.270508 3.51476C0.270508 5.25042 1.67755 6.65745 3.41324 6.65745Z" fill="#CD9757"/>
+                                 </svg>
+                              </button>
+                              <button class="int-38 int-btn" id="pin">
+                                 <svg width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.936 5.01554C8.936 7.48177 6.93481 9.4759 4.47558 9.4759C2.00931 9.4759 0.0151367 7.47472 0.0151367 5.01554C0.0151367 2.54931 2.01635 0.555194 4.47558 0.555194C6.94185 0.548148 8.936 2.54931 8.936 5.01554Z" fill="#CD9757"/>
+                                 </svg>
+                              </button>
+                              <button class="int-39 int-btn" id="pin">
+                                 <svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.41324 6.65745C5.14893 6.65745 6.55597 5.25042 6.55597 3.51476C6.55597 1.7791 5.14893 0.37207 3.41324 0.37207C1.67755 0.37207 0.270508 1.7791 0.270508 3.51476C0.270508 5.25042 1.67755 6.65745 3.41324 6.65745Z" fill="#CD9757"/>
+                                 </svg>
+                              </button>
+                              <button class="int-40 int-btn" id="pin">
+                                 <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.07419 5.18693C9.07419 7.65316 7.07299 9.64729 4.61376 9.64729C2.14749 9.64729 0.15332 7.64611 0.15332 5.18693C0.15332 2.72069 2.15454 0.726581 4.61376 0.726581C7.08004 0.719535 9.07419 2.72069 9.07419 5.18693Z" fill="#CD9757"/>
+                                 </svg>
+                              </button>
+                              <button class="int-41 int-btn" id="pin">
+                                 <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.278751 4.3774C0.278751 6.35743 1.88534 7.95695 3.85836 7.95695C5.83842 7.95695 7.43799 6.35039 7.43799 4.3774C7.43799 2.39737 5.83138 0.797852 3.85836 0.797852C1.88534 0.797852 0.278751 2.39737 0.278751 4.3774Z" fill="#CD9757"/>
+                                 </svg>
+                              </button>
+                              <button class="int-42 int-btn" id="pin">
+                                 <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.76861 3.74264C7.76861 5.72267 6.16202 7.32219 4.189 7.32219C2.20894 7.32219 0.609375 5.71562 0.609375 3.74264C0.609375 1.7626 2.21599 0.163086 4.189 0.163086C6.16202 0.163086 7.76861 1.7626 7.76861 3.74264Z" fill="#CD9757"/>
+                                 </svg>
+                              </button>
+                              <button class="int-43 int-btn" id="pin">
+                                 <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.6558 3.33969C9.77118 4.97568 9.34478 7.20229 7.7146 8.31372C6.07859 9.42912 3.85195 9.00277 2.74054 7.37261C1.62516 5.73663 2.05157 3.51001 3.68176 2.39858C5.31195 1.28714 7.54041 1.70371 8.6558 3.33969Z" fill="#CD9757"/>
+                                 </svg>
+                              </button>
+                           </div>
+                           <!---------------------------Interest------------------------->
+                           <div class="interest">
+                              <button class="inst-1 inst_btn" id="pin">
+                                 <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.76049 8.78459C7.08112 8.78459 8.96236 6.90018 8.96236 4.57564C8.96236 2.25111 7.08112 0.366699 4.76049 0.366699C2.43985 0.366699 0.558594 2.25111 0.558594 4.57564C0.558594 6.90018 2.43985 8.78459 4.76049 8.78459Z" fill="#0D3252"/>
+                                 </svg>
+                              </button>
+                              <button class="inst-2 inst_btn" id="pin">
+                                 <svg width="8" height="8" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.76049 8.78459C7.08112 8.78459 8.96236 6.90018 8.96236 4.57564C8.96236 2.25111 7.08112 0.366699 4.76049 0.366699C2.43985 0.366699 0.558594 2.25111 0.558594 4.57564C0.558594 6.90018 2.43985 8.78459 4.76049 8.78459Z" fill="#0D3252"/>
+                                 </svg>
+                              </button>
+                              <button class="inst-3 inst_btn" id="pin">
+                                 <svg width="8" height="8" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.76049 8.78459C7.08112 8.78459 8.96236 6.90018 8.96236 4.57564C8.96236 2.25111 7.08112 0.366699 4.76049 0.366699C2.43985 0.366699 0.558594 2.25111 0.558594 4.57564C0.558594 6.90018 2.43985 8.78459 4.76049 8.78459Z" fill="#0D3252"/>
+                                 </svg>
+                              </button>
+                              <button class="inst-4 inst_btn" id="pin">
+                                 <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.9976 7.04218C5.85996 7.04218 7.36969 5.52989 7.36969 3.6644C7.36969 1.7989 5.85996 0.286621 3.9976 0.286621C2.13524 0.286621 0.625488 1.7989 0.625488 3.6644C0.625488 5.52989 2.13524 7.04218 3.9976 7.04218Z" fill="#0D3252"/>
+                                 </svg>
+                              </button>
+                              <button class="inst-5 inst_btn" id="pin">
+                                 <svg width="7" height="7" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.9976 7.04218C5.85996 7.04218 7.36969 5.52989 7.36969 3.6644C7.36969 1.7989 5.85996 0.286621 3.9976 0.286621C2.13524 0.286621 0.625488 1.7989 0.625488 3.6644C0.625488 5.52989 2.13524 7.04218 3.9976 7.04218Z" fill="#0D3252"/>
+                                 </svg>
+                              </button>
+                              <button class="inst-6 inst_btn" id="pin">
+                                 <svg width="9" height="9" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.9976 7.04218C5.85996 7.04218 7.36969 5.52989 7.36969 3.6644C7.36969 1.7989 5.85996 0.286621 3.9976 0.286621C2.13524 0.286621 0.625488 1.7989 0.625488 3.6644C0.625488 5.52989 2.13524 7.04218 3.9976 7.04218Z" fill="#0D3252"/>
+                                 </svg>
+                              </button>
+                              <button class="inst-7 inst_btn" id="pin">
+                                 <svg width="9" height="9" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.9976 7.04218C5.85996 7.04218 7.36969 5.52989 7.36969 3.6644C7.36969 1.7989 5.85996 0.286621 3.9976 0.286621C2.13524 0.286621 0.625488 1.7989 0.625488 3.6644C0.625488 5.52989 2.13524 7.04218 3.9976 7.04218Z" fill="#0D3252"/>
+                                 </svg>
+                              </button>
+                              <button class="inst-8 inst_btn" id="pin">
+                                 <svg width="9" height="9" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.9976 7.04218C5.85996 7.04218 7.36969 5.52989 7.36969 3.6644C7.36969 1.7989 5.85996 0.286621 3.9976 0.286621C2.13524 0.286621 0.625488 1.7989 0.625488 3.6644C0.625488 5.52989 2.13524 7.04218 3.9976 7.04218Z" fill="#0D3252"/>
+                                 </svg>
+                              </button>
+                              <button class="inst-9 inst_btn" id="pin">
+                                 <svg width="9" height="9" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.9976 7.04218C5.85996 7.04218 7.36969 5.52989 7.36969 3.6644C7.36969 1.7989 5.85996 0.286621 3.9976 0.286621C2.13524 0.286621 0.625488 1.7989 0.625488 3.6644C0.625488 5.52989 2.13524 7.04218 3.9976 7.04218Z" fill="#0D3252"/>
+                                 </svg>
+                              </button>
+                              <button class="inst-10 inst_btn" id="pin">
+                                 <svg width="9" height="9" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.9976 7.04218C5.85996 7.04218 7.36969 5.52989 7.36969 3.6644C7.36969 1.7989 5.85996 0.286621 3.9976 0.286621C2.13524 0.286621 0.625488 1.7989 0.625488 3.6644C0.625488 5.52989 2.13524 7.04218 3.9976 7.04218Z" fill="#0D3252"/>
+                                 </svg>
+                              </button>
+                              <button class="inst-11 inst_btn" id="pin">
+                                 <svg width="7" height="7" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.9976 7.04218C5.85996 7.04218 7.36969 5.52989 7.36969 3.6644C7.36969 1.7989 5.85996 0.286621 3.9976 0.286621C2.13524 0.286621 0.625488 1.7989 0.625488 3.6644C0.625488 5.52989 2.13524 7.04218 3.9976 7.04218Z" fill="#0D3252"/>
+                                 </svg>
+                              </button>
+                              <button class="inst-12 inst_btn" id="pin">
+                                 <svg width="9" height="9" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.9976 7.04218C5.85996 7.04218 7.36969 5.52989 7.36969 3.6644C7.36969 1.7989 5.85996 0.286621 3.9976 0.286621C2.13524 0.286621 0.625488 1.7989 0.625488 3.6644C0.625488 5.52989 2.13524 7.04218 3.9976 7.04218Z" fill="#0D3252"/>
+                                 </svg>
+                              </button>
+                              <button class="inst-13 inst_btn" id="pin">
+                                 <svg width="9" height="9" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.9976 7.04218C5.85996 7.04218 7.36969 5.52989 7.36969 3.6644C7.36969 1.7989 5.85996 0.286621 3.9976 0.286621C2.13524 0.286621 0.625488 1.7989 0.625488 3.6644C0.625488 5.52989 2.13524 7.04218 3.9976 7.04218Z" fill="#0D3252"/>
+                                 </svg>
+                              </button>
+                              <button class="inst-14 inst_btn" id="pin">
+                                 <svg width="9" height="9" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.9976 7.04218C5.85996 7.04218 7.36969 5.52989 7.36969 3.6644C7.36969 1.7989 5.85996 0.286621 3.9976 0.286621C2.13524 0.286621 0.625488 1.7989 0.625488 3.6644C0.625488 5.52989 2.13524 7.04218 3.9976 7.04218Z" fill="#0D3252"/>
+                                 </svg>
+                              </button>
+                              <button class="inst-15 inst_btn" id="pin">
+                                 <svg width="9" height="9" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.9976 7.04218C5.85996 7.04218 7.36969 5.52989 7.36969 3.6644C7.36969 1.7989 5.85996 0.286621 3.9976 0.286621C2.13524 0.286621 0.625488 1.7989 0.625488 3.6644C0.625488 5.52989 2.13524 7.04218 3.9976 7.04218Z" fill="#0D3252"/>
+                                 </svg>
+                              </button>
+                              <button class="inst-16 inst_btn" id="pin">
+                                 <svg width="9" height="9" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.9976 7.04218C5.85996 7.04218 7.36969 5.52989 7.36969 3.6644C7.36969 1.7989 5.85996 0.286621 3.9976 0.286621C2.13524 0.286621 0.625488 1.7989 0.625488 3.6644C0.625488 5.52989 2.13524 7.04218 3.9976 7.04218Z" fill="#0D3252"/>
+                                 </svg>
+                              </button>
+                              <button class="inst-17 inst_btn" id="pin">
+                                 <svg width="7" height="7" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.9976 7.04218C5.85996 7.04218 7.36969 5.52989 7.36969 3.6644C7.36969 1.7989 5.85996 0.286621 3.9976 0.286621C2.13524 0.286621 0.625488 1.7989 0.625488 3.6644C0.625488 5.52989 2.13524 7.04218 3.9976 7.04218Z" fill="#0D3252"/>
+                                 </svg>
+                              </button>
+                              <button class="inst-18 inst_btn" id="pin">
+                                 <svg width="7" height="7" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.9976 7.04218C5.85996 7.04218 7.36969 5.52989 7.36969 3.6644C7.36969 1.7989 5.85996 0.286621 3.9976 0.286621C2.13524 0.286621 0.625488 1.7989 0.625488 3.6644C0.625488 5.52989 2.13524 7.04218 3.9976 7.04218Z" fill="#0D3252"/>
+                                 </svg>
+                              </button>
+                              <button class="inst-19 inst_btn" id="pin">
+                                 <svg width="10" height="10" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.9976 7.04218C5.85996 7.04218 7.36969 5.52989 7.36969 3.6644C7.36969 1.7989 5.85996 0.286621 3.9976 0.286621C2.13524 0.286621 0.625488 1.7989 0.625488 3.6644C0.625488 5.52989 2.13524 7.04218 3.9976 7.04218Z" fill="#0D3252"/>
+                                 </svg>
+                              </button>
+                              <button class="inst-20 inst_btn" id="pin">
+                                 <svg width="9" height="9" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.9976 7.04218C5.85996 7.04218 7.36969 5.52989 7.36969 3.6644C7.36969 1.7989 5.85996 0.286621 3.9976 0.286621C2.13524 0.286621 0.625488 1.7989 0.625488 3.6644C0.625488 5.52989 2.13524 7.04218 3.9976 7.04218Z" fill="#0D3252"/>
+                                 </svg>
+                              </button>
+                              <button class="inst-21 inst_btn" id="pin">
+                                 <svg width="9" height="9" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.9976 7.04218C5.85996 7.04218 7.36969 5.52989 7.36969 3.6644C7.36969 1.7989 5.85996 0.286621 3.9976 0.286621C2.13524 0.286621 0.625488 1.7989 0.625488 3.6644C0.625488 5.52989 2.13524 7.04218 3.9976 7.04218Z" fill="#0D3252"/>
+                                 </svg>
+                              </button>
+                              <button class="inst-22 inst_btn" id="pin">
+                                 <svg width="7" height="7" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.9976 7.04218C5.85996 7.04218 7.36969 5.52989 7.36969 3.6644C7.36969 1.7989 5.85996 0.286621 3.9976 0.286621C2.13524 0.286621 0.625488 1.7989 0.625488 3.6644C0.625488 5.52989 2.13524 7.04218 3.9976 7.04218Z" fill="#0D3252"/>
+                                 </svg>
+                              </button>
+                              <button class="inst-23 inst_btn" id="pin">
+                                 <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.9976 7.04218C5.85996 7.04218 7.36969 5.52989 7.36969 3.6644C7.36969 1.7989 5.85996 0.286621 3.9976 0.286621C2.13524 0.286621 0.625488 1.7989 0.625488 3.6644C0.625488 5.52989 2.13524 7.04218 3.9976 7.04218Z" fill="#0D3252"/>
+                                 </svg>
+                              </button>
+                              <button class="inst-24 inst_btn" id="pin">
+                                 <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.9976 7.04218C5.85996 7.04218 7.36969 5.52989 7.36969 3.6644C7.36969 1.7989 5.85996 0.286621 3.9976 0.286621C2.13524 0.286621 0.625488 1.7989 0.625488 3.6644C0.625488 5.52989 2.13524 7.04218 3.9976 7.04218Z" fill="#0D3252"/>
+                                 </svg>
+                              </button>
+                              <button class="inst-25 inst_btn" id="pin">
+                                 <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.9976 7.04218C5.85996 7.04218 7.36969 5.52989 7.36969 3.6644C7.36969 1.7989 5.85996 0.286621 3.9976 0.286621C2.13524 0.286621 0.625488 1.7989 0.625488 3.6644C0.625488 5.52989 2.13524 7.04218 3.9976 7.04218Z" fill="#0D3252"/>
+                                 </svg>
+                              </button>
+                              <button class="inst-26 inst_btn" id="pin">
+                                 <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.9976 7.04218C5.85996 7.04218 7.36969 5.52989 7.36969 3.6644C7.36969 1.7989 5.85996 0.286621 3.9976 0.286621C2.13524 0.286621 0.625488 1.7989 0.625488 3.6644C0.625488 5.52989 2.13524 7.04218 3.9976 7.04218Z" fill="#0D3252"/>
+                                 </svg>
+                              </button>
+                              <button class="inst-27 inst_btn" id="pin">
+                                 <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.9976 7.04218C5.85996 7.04218 7.36969 5.52989 7.36969 3.6644C7.36969 1.7989 5.85996 0.286621 3.9976 0.286621C2.13524 0.286621 0.625488 1.7989 0.625488 3.6644C0.625488 5.52989 2.13524 7.04218 3.9976 7.04218Z" fill="#0D3252"/>
+                                 </svg>
+                              </button>
+                              <button class="inst-28 inst_btn" id="pin">
+                                 <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.9976 7.04218C5.85996 7.04218 7.36969 5.52989 7.36969 3.6644C7.36969 1.7989 5.85996 0.286621 3.9976 0.286621C2.13524 0.286621 0.625488 1.7989 0.625488 3.6644C0.625488 5.52989 2.13524 7.04218 3.9976 7.04218Z" fill="#0D3252"/>
+                                 </svg>
+                              </button>
+                              <button class="inst-29 inst_btn" id="pin">
+                                 <svg width="9" height="9" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.9976 7.04218C5.85996 7.04218 7.36969 5.52989 7.36969 3.6644C7.36969 1.7989 5.85996 0.286621 3.9976 0.286621C2.13524 0.286621 0.625488 1.7989 0.625488 3.6644C0.625488 5.52989 2.13524 7.04218 3.9976 7.04218Z" fill="#0D3252"/>
+                                 </svg>
+                              </button>
+                              <button class="inst-30 inst_btn" id="pin">
+                                 <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.9976 7.04218C5.85996 7.04218 7.36969 5.52989 7.36969 3.6644C7.36969 1.7989 5.85996 0.286621 3.9976 0.286621C2.13524 0.286621 0.625488 1.7989 0.625488 3.6644C0.625488 5.52989 2.13524 7.04218 3.9976 7.04218Z" fill="#0D3252"/>
+                                 </svg>
+                              </button>
+                              <button class="inst-31 inst_btn" id="pin">
+                                 <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.9976 7.04218C5.85996 7.04218 7.36969 5.52989 7.36969 3.6644C7.36969 1.7989 5.85996 0.286621 3.9976 0.286621C2.13524 0.286621 0.625488 1.7989 0.625488 3.6644C0.625488 5.52989 2.13524 7.04218 3.9976 7.04218Z" fill="#0D3252"/>
+                                 </svg>
+                              </button>
+                              <button class="inst-32 inst_btn" id="pin">
+                                 <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.9976 7.04218C5.85996 7.04218 7.36969 5.52989 7.36969 3.6644C7.36969 1.7989 5.85996 0.286621 3.9976 0.286621C2.13524 0.286621 0.625488 1.7989 0.625488 3.6644C0.625488 5.52989 2.13524 7.04218 3.9976 7.04218Z" fill="#0D3252"/>
+                                 </svg>
+                              </button>
+                              <button class="inst-33 inst_btn" id="pin">
+                                 <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.9976 7.04218C5.85996 7.04218 7.36969 5.52989 7.36969 3.6644C7.36969 1.7989 5.85996 0.286621 3.9976 0.286621C2.13524 0.286621 0.625488 1.7989 0.625488 3.6644C0.625488 5.52989 2.13524 7.04218 3.9976 7.04218Z" fill="#0D3252"/>
+                                 </svg>
+                              </button>
+                           </div>
+                        </div>
+                     </div>
+                     <ul class="btm_list">
+                        <li>
+                           <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M6 12.5C9.31371 12.5 12 9.81371 12 6.5C12 3.18629 9.31371 0.5 6 0.5C2.68629 0.5 0 3.18629 0 6.5C0 9.81371 2.68629 12.5 6 12.5Z" fill="#ED446D"/>
+                           </svg>
+                           Demographic
+                        </li>
+                        <li>
+                           <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M6 12C9.31371 12 12 9.31371 12 6C12 2.68629 9.31371 0 6 0C2.68629 0 0 2.68629 0 6C0 9.31371 2.68629 12 6 12Z" fill="#0D3252"/>
+                           </svg>
+                           Interest
+                        </li>
+                        <li>
+                           <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M6 12.5C9.31371 12.5 12 9.81371 12 6.5C12 3.18629 9.31371 0.5 6 0.5C2.68629 0.5 0 3.18629 0 6.5C0 9.81371 2.68629 12.5 6 12.5Z" fill="#CD9757"/>
+                           </svg>
+                           Purchase Intent
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <!-------- value-column ------->
+               <div class="col-lg-7 col-12 mt-lg-0 mt-4">
+                  <div class="list_block">
+                     <div class="ft_list">
+                        <div class="img_bt">
+                           <img src="assets/images/demographic_img.png" class="img-fluid" alt="img"/>
+                        </div>
+                        <div class="ct_bt">
+                           <h2 class="dm_value">45</h2>
+                           <p>Demographic</p>
+                        </div>
+                     </div>
+                     <div class="ft_list">
+                        <div class="img_bt">
+                           <img src="assets/images/interest_img.png" class="img-fluid" alt="img"/>
+                        </div>
+                        <div class="ct_bt">
+                           <h2 class="int_value">12</h2>
+                           <p>Interest</p>
+                        </div>
+                     </div>
+                     <div class="ft_list">
+                        <div class="img_bt">
+                           <img src="assets/images/purchase_img.png" class="img-fluid" alt="img"/>
+                        </div>
+                        <div class="ct_bt">
+                           <h2 class="int_value">06</h2>
+                           <p>Purchase Intent</p>
+                        </div>
+                     </div>
+                  </div>
+                  <!-------- site-info ------->
+                  <h4 class="title-heading">Site Visited</h4>
+                  <div class="blk_outer">
+                     <div class="table-responsive">
+                        <div class="table_inner">
+                           <div class="top_head">
+                              <p>Website Name</p>
+                              <p>Cookies</p>
+                           </div>
+                           <ul>
+                              <li class="blk_info">
+                                 <div class="st_url">
+                                    <input id="c1" type="checkbox" class="square-selector">
+                                    <span class="st_list">
+                                    <img src="assets/images/icon.png" class="img-thumbnail" alt="icon"/>
+                                    https://www.flaticon.com
+                                    </span>
+                                 </div>
+                                 <label class="switch-btn">
+                                 <input type="checkbox" class="btn_slide">
+                                 <span class="slide-btn"></span>
+                                 </label>
+                              </li>
+                              <li class="blk_info">
+                                 <div class="st_url">
+                                    <input id="c1" type="checkbox" class="square-selector">
+                                    <span class="st_list">
+                                    <img src="assets/images/icon.png" class="img-thumbnail" alt="icon"/>
+                                    https://www.apple.com
+                                    </span>
+                                 </div>
+                                 <label class="switch-btn">
+                                 <input type="checkbox" class="btn_slide">
+                                 <span class="slide-btn"></span>
+                                 </label>
+                              </li>
+                              <li class="blk_info">
+                                 <div class="st_url">
+                                    <input id="c1" type="checkbox" class="square-selector">
+                                    <span class="st_list">
+                                    <img src="assets/images/icon.png" class="img-thumbnail" alt="icon"/>
+                                    https://www.apple.com
+                                    </span>
+                                 </div>
+                                 <label class="switch-btn">
+                                 <input type="checkbox" class="btn_slide">
+                                 <span class="slide-btn"></span>
+                                 </label>
+                              </li>
+                              <li class="blk_info">
+                                 <div class="st_url">
+                                    <input id="c1" type="checkbox" class="square-selector">
+                                    <span class="st_list">
+                                    <img src="assets/images/icon.png" class="img-thumbnail" alt="icon"/>
+                                    https://www.apple.com
+                                    </span>
+                                 </div>
+                                 <label class="switch-btn">
+                                 <input type="checkbox" class="btn_slide">
+                                 <span class="slide-btn"></span>
+                                 </label>
+                              </li>
+                              <li class="blk_info">
+                                 <div class="st_url">
+                                    <input id="c1" type="checkbox" class="square-selector">
+                                    <span class="st_list">
+                                    <img src="assets/images/icon.png" class="img-thumbnail" alt="icon"/>
+                                    https://www.apple.com
+                                    </span>
+                                 </div>
+                                 <label class="switch-btn">
+                                 <input type="checkbox" class="btn_slide">
+                                 <span class="slide-btn"></span>
+                                 </label>
+                              </li>
+                              <li class="blk_info">
+                                 <div class="st_url">
+                                    <input id="c1" type="checkbox" class="square-selector">
+                                    <span class="st_list">
+                                    <img src="assets/images/icon.png" class="img-thumbnail" alt="icon"/>
+                                    https://www.apple.com
+                                    </span>
+                                 </div>
+                                 <label class="switch-btn">
+                                 <input type="checkbox" class="btn_slide">
+                                 <span class="slide-btn"></span>
+                                 </label>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-------- bottom-button ------->
+               <div class="col-12 mt-lg-5 mt-4">
+                  <div class="btn-block">
+                     <button type="delete" class="dl-btn btn">
+                        <svg width="18" height="20" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path fill-rule="evenodd" clip-rule="evenodd" d="M11.5247 2.49547C11.7841 2.49547 12 2.71081 12 2.9848V3.23813C12 3.50546 11.7841 3.72746 11.5247 3.72746H0.475902C0.215907 3.72746 0 3.50546 0 3.23813V2.9848C0 2.71081 0.215907 2.49547 0.475902 2.49547H2.41971C2.81457 2.49547 3.1582 2.21481 3.24703 1.81881L3.34882 1.36415C3.50702 0.744825 4.02766 0.333496 4.62351 0.333496H7.37649C7.96585 0.333496 8.49233 0.744825 8.64469 1.33149L8.75362 1.81815C8.8418 2.21481 9.18543 2.49547 9.58094 2.49547H11.5247ZM10.5372 11.7562C10.7402 9.86486 11.0955 5.37157 11.0955 5.32624C11.1085 5.18891 11.0637 5.05891 10.9749 4.95424C10.8796 4.85625 10.759 4.79825 10.6261 4.79825H1.37905C1.24548 4.79825 1.1184 4.85625 1.03023 4.95424C0.940751 5.05891 0.896662 5.18891 0.903145 5.32624C0.904337 5.33457 0.917086 5.49285 0.938401 5.75746C1.03309 6.93296 1.29681 10.2069 1.46723 11.7562C1.58782 12.8975 2.33669 13.6148 3.42141 13.6408C4.25845 13.6602 5.12078 13.6668 6.00256 13.6668C6.83312 13.6668 7.67665 13.6602 8.53963 13.6408C9.66195 13.6215 10.4102 12.9168 10.5372 11.7562Z" fill="#0E70B7"/>
+                        </svg>
+                        Delete All
+                     </button>
+                     <button type="submit" class="dwn-btn btn" type="button" data-bs-toggle="modal" data-bs-target="#confirm_modal">
+                        <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M9.2301 5.80054V1.29279C9.2301 0.813483 9.5701 0.414062 10.0001 0.414062C10.3851 0.414062 10.7113 0.749687 10.763 1.17481L10.7701 1.29279V5.80054L15.55 5.80088C17.93 5.80088 19.8853 7.99229 19.9951 10.7253L20 10.9678V16.634C20 19.3862 18.1127 21.6452 15.768 21.7721L15.56 21.7777H4.44C2.06 21.7777 0.11409 19.5973 0.00483778 16.8542L0 16.6108L0 10.9562C0 8.20404 1.87791 5.93399 4.22199 5.80652L4.43 5.80088H9.23V12.9997L7.63 11.142C7.33 10.7936 6.84 10.7936 6.54 11.142C6.39 11.3161 6.32 11.5484 6.32 11.7806C6.32 11.9571 6.3648 12.141 6.45952 12.2967L6.54 12.4076L9.45 15.798C9.59 15.9722 9.79 16.0651 10 16.0651C10.1667 16.0651 10.3333 16.0006 10.4653 15.8783L10.54 15.798L13.45 12.4076C13.75 12.0592 13.75 11.4903 13.45 11.142C13.1773 10.8253 12.7475 10.7965 12.4462 11.0556L12.36 11.142L10.77 12.9997V5.80088L9.2301 5.80054Z" fill="white"/>
+                        </svg>
+                        Download All
+                     </button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-------- confirm-modal ------->
+      <div class="modal fade" id="confirm_modal" tabindex="-1" aria-labelledby="confirm_modalLabel" aria-hidden="true">
+         <div class="modal-dialog">
+            <div class="modal-content">
+               <div class="modal-body">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  <h3 class="modal_title">Download your data</h3>
+                  <form id="mail_frm">
+                     <div class="input_row">
+                        <label for="Email" class="form-label">Enter your email and submit the request. We will come back to you soon!</label>
+                        <input type="email" class="form-control" id="Email" aria-describedby="emailerror">
+                        <div id="emailerror" class="form-text d-none">Please enter your correct email</div>
+                     </div>
+                     <id-ward class="btn btn-submit">
+                     <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.2301 5.80054V1.29279C9.2301 0.813483 9.5701 0.414062 10.0001 0.414062C10.3851 0.414062 10.7113 0.749687 10.763 1.17481L10.7701 1.29279V5.80054L15.55 5.80088C17.93 5.80088 19.8853 7.99229 19.9951 10.7253L20 10.9678V16.634C20 19.3862 18.1127 21.6452 15.768 21.7721L15.56 21.7777H4.44C2.06 21.7777 0.11409 19.5973 0.00483778 16.8542L0 16.6108L0 10.9562C0 8.20404 1.87791 5.93399 4.22199 5.80652L4.43 5.80088H9.23V12.9997L7.63 11.142C7.33 10.7936 6.84 10.7936 6.54 11.142C6.39 11.3161 6.32 11.5484 6.32 11.7806C6.32 11.9571 6.3648 12.141 6.45952 12.2967L6.54 12.4076L9.45 15.798C9.59 15.9722 9.79 16.0651 10 16.0651C10.1667 16.0651 10.3333 16.0006 10.4653 15.8783L10.54 15.798L13.45 12.4076C13.75 12.0592 13.75 11.4903 13.45 11.142C13.1773 10.8253 12.7475 10.7965 12.4462 11.0556L12.36 11.142L10.77 12.9997V5.80088L9.2301 5.80054Z" fill="white"/>
+                     </svg>
+                     Submit
+                     </button>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--====== jquery js ======-->
+      <script src="assets/js/jquery-1.12.4.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+      <script src="assets/js/main.js"></script>
+   </body>
+</html>
